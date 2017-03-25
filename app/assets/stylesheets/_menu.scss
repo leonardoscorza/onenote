@@ -1,0 +1,11 @@
+.navbar-default{
+  background-color: $primary-color;
+  .navbar-brand{
+    color: $secundary-color;
+  }
+  .logout-link{
+    a{
+      color: $secundary-color;
+    }
+  }
+}
