@@ -1,1 +1,34 @@
-<%= render "shared/sidebar" %>
+<%= render "shared/menu" %>
+
+<div class="fill">
+  <div class="col-md-2 col-xs-4 fill">
+    <%= render "shared/sidebar" %>
+  </div>
+  <div class="col-md-10 col-xs-8">
+    <div class="row action-buttons">
+      <div class="col-md-1">
+        <a class="btn btn-default col-xs-12">Excluir</a>
+      </div>
+      <div class="col-md-2">
+        <a class="btn btn-default col-xs-12" data-toggle="modal" data-target="#modal_tags">Editar Tags</a>
+      </div>
+      <div class="col-md-2 col-md-offset-2 col-xs-12">
+        <h4>Note X  <a href="#" class="edit_title"><span class="glyphicon glyphicon-edit"></span></a></h4>
+      </div>
+      <div class="col-md-1 col-md-offset-2">
+        <a class="btn btn-default col-xs-12" href="#" class="new_note_btn">Salvar</a>
+      </div>
+      <div class="col-md-2">
+        <a class="btn btn-default col-xs-12" data-toggle="modal" data-target="#modal_share">Compartilhar</a>
+      </div>
+    </div>
+    <div class="row note_box">
+      <form action="" class="new_note_form">
+        <textarea id="note_edit"></textarea>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/modal_tags" %>
+<%= render "shared/modal_share" %>
