@@ -1,0 +1,130 @@
+.side-bar
+{
+    background: $soft-color;
+    position:absolute;
+    height:100%;
+    color: $primary-color;
+    transition: margin-left 0.5s;
+    hr{
+      border-color: $secundary-color;
+    }
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.side-bar ul
+{
+    list-style:none;
+    padding:0px;
+
+}
+
+.side-bar ul li.menu-head
+{
+    font-family: 'Lato', sans-serif;
+    padding:20px;
+    color:$secundary-color;
+    font-weight: 700;
+}
+
+
+.side-bar ul li.menu-head a
+{
+    color:$secundary-color;
+    text-decoration:none;
+    height:50px;
+}
+
+
+.side-bar ul .menu-head  a
+{
+    color:$secundary-color;
+    text-decoration:none;
+    height:50px;
+}
+
+.side-bar ul .menu li  a
+{
+    color:$secundary-color;
+    text-decoration:none;
+    display:inline-table;
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.side-bar ul .menu li  a:hover
+{
+    border-left:3px solid $secundary-color;
+    padding-left:17px;
+}
+
+.side-bar ul .menu li  a.active
+{
+    padding-left:17px;
+    background:#D9853B;
+    border-left:3px solid $secundary-color;
+}
+
+.side-bar ul .menu li  a.active:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+	border-left: 7px solid #D9853B;
+    margin-top: -10px;
+    margin-left: 180px;
+}
+
+
+.content
+{
+    padding-left: 200px;
+    transition: padding-left 0.5s;
+}
+
+.active > .side-bar
+{
+    margin-left:-150px;
+    transition: margin-left 0.5s;
+}
+
+.active > .content
+{
+    padding-left:50px;
+    transition: padding-left 0.5s;
+}
+
+.notes-list{
+  // padding-top: 20px;
+  color: $secundary-color;
+  height: 500px;
+  overflow-y:auto;
+  .note{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+}
+
+.remove_tag{
+  margin-bottom: 10px;
+  margin-top: -25px;
+}
+
+.note_box{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.action-buttons{
+  margin-bottom: 10px;
+}

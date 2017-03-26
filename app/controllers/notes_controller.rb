@@ -4,7 +4,6 @@ class NotesController < ApplicationController
   def index
     # TODO: Colocar filtros
     @notes = current_user.notes + current_user.guest_notes
-    render :json => @notes.to_json(:include => [:users, :tags])
   end
 
   def show
